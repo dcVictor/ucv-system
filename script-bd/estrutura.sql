@@ -10,6 +10,7 @@ CREATE TABLE operadores (
 	codop INTEGER NOT NULL,
 	nome_op VARCHAR(100) NOT NULL,
 	intervalo INTEGER NOT NULL,
+	turno_op integer NULL,
 	CONSTRAINT pk_operadores PRIMARY KEY (codop)
 	CONSTRAINT fk_opintervalos FOREIGN KEY (intervalo) REFERENCES intervalos(codintervalo)
 );

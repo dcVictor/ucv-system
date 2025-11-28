@@ -11,47 +11,47 @@ INSERT INTO mips (codmip, nome_mip, desc_mip) VALUES
 (16, 'MIP-16', 'Haitian'), (17, 'MIP-17', 'Haitian'), (18, 'MIP-18', 'Haitian'), (19, 'MIP-19', 'Haitian'), (20, 'MIP-20', 'Haitian'),
 (21, 'MIP-21', 'Haitian'), (22, 'MIP-22', 'Haitian'), (23, 'MIP-23', 'Haitian'), (24, 'MIP-24', 'Haitian'), (25, 'MIP-25', 'Haitian');
 
-INSERT INTO operadores (codop, nome_op, intervalo) VALUES
+INSERT INTO operadores (codop, nome_op, intervalo, turno) VALUES
 -- Grupo 08:20 (ID 1)
-(1, 'Jussara', 1),
-(2, 'Cauana', 1),
-(3, 'Janaina', 1),
-(4, 'Solgelys', 1),
-(5, 'Isabel', 1),
-(31, 'Brayan', 1),
-(33, 'Josué', 1),
-(34, 'Roberto', 1),
-(35, 'Jesus', 1),
+(1, 'Jussara', 1, 1),
+(2, 'Cauana', 1, 1),
+(3, 'Janaina', 1, 1),
+(4, 'Solgelys', 1, 1),
+(5, 'Isabel', 1, 1),
+(31, 'Brayan', 1, 1),
+(33, 'Josué', 1, 1),
+(34, 'Roberto', 1, 1),
+(35, 'Jesus', 1, 1),
 
 -- Grupo 09:30 (ID 2)
-(6, 'Ana Flávia', 2),
-(7, 'Heidermar', 2),
-(8, 'Victoria', 2),
-(9, 'Simone', 2),
-(10, 'Ilenir', 2),
-(32, 'Salete', 2),
-(37, 'Larissa', 2),
-(38, 'Danyelis', 2),
-(39, 'Marcia B', 2),
-(40, 'Gabriel', 2),
+(6, 'Ana Flávia', 2, 1),
+(7, 'Heidermar', 2, 1),
+(8, 'Victoria', 2, 1),
+(9, 'Simone', 2, 1),
+(10, 'Ilenir', 2, 1),
+(32, 'Salete', 2, 1),
+(37, 'Larissa', 2, 1),
+(38, 'Danyelis', 2, 1),
+(39, 'Marcia B', 2, 1),
+(40, 'Gabriel', 2, 1),
 
 -- Grupo 10:40 (ID 3)
-(11, 'Ana Garcia', 3),
-(12, 'Jenifer', 3),
-(13, 'Mariangel', 3),
-(14, 'Jean C', 3),
-(15, 'Emelis', 3),
-(41, 'Kidia', 3),
-(42, 'Marcia T', 3),
-(43, 'Jean Pierre', 3),
+(11, 'Ana Garcia', 3, 1),
+(12, 'Jenifer', 3, 1),
+(13, 'Mariangel', 3, 1),
+(14, 'Jean C', 3, 1),
+(15, 'Emelis', 3, 1),
+(41, 'Kidia', 3, 1),
+(42, 'Marcia T', 3, 1),
+(43, 'Jean Pierre', 3, 1),
 
 -- Grupo 11:50 (ID 4)
-(16, 'Freddy', 4),
-(17, 'Sandra', 4),
-(18, 'Diana', 4),
-(19, 'Gregorio', 4),
-(20, 'Augusto', 4),
-(36, 'Freidimar', 4);
+(16, 'Freddy', 4, 1),
+(17, 'Sandra', 4, 1),
+(18, 'Diana', 4, 1),
+(19, 'Gregorio', 4, 1),
+(20, 'Augusto', 4, 1),
+(36, 'Freidimar', 4, 1);
 
 
 
