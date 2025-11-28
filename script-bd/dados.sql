@@ -1,0 +1,66 @@
+INSERT INTO intervalos (horario) VALUES
+('08:20'),
+('09:30'),
+('10:40'),
+('11:50');
+
+INSERT INTO mips (codmip, nome_mip, desc_mip) VALUES 
+(1, 'MIP-01', 'Arburg'), (2, 'MIP-02', 'Arburg'), (3, 'MIP-03', 'Arburg'), (4, 'MIP-04', 'Arburg'), (5, 'MIP-05', 'Arburg'), 
+(6, 'MIP-06', 'Arburg'), (7, 'MIP-07', 'Arburg'), (8, 'MIP-08', 'Arburg'), (9, 'MIP-09', 'Arburg'), (10, 'MIP-10', 'Arburg'),
+(11, 'MIP-11', 'Haitian'), (12, 'MIP-12', 'Haitian'), (13, 'MIP-13', 'Haitian'), (14, 'MIP-14', 'Haitian'), (15, 'MIP-15', 'Haitian'),
+(16, 'MIP-16', 'Haitian'), (17, 'MIP-17', 'Haitian'), (18, 'MIP-18', 'Haitian'), (19, 'MIP-19', 'Haitian'), (20, 'MIP-20', 'Haitian'),
+(21, 'MIP-21', 'Haitian'), (22, 'MIP-22', 'Haitian'), (23, 'MIP-23', 'Haitian'), (24, 'MIP-24', 'Haitian'), (25, 'MIP-25', 'Haitian');
+
+INSERT INTO operadores (codop, nome_op, intervalo) VALUES
+-- Grupo 08:20 (ID 1)
+(1, 'Jussara', 1),
+(2, 'Cauana', 1),
+(3, 'Janaina', 1),
+(4, 'Solgelys', 1),
+(5, 'Isabel', 1),
+(31, 'Brayan', 1),
+(33, 'Josué', 1),
+(34, 'Roberto', 1),
+(35, 'Jesus', 1),
+
+-- Grupo 09:30 (ID 2)
+(6, 'Ana Flávia', 2),
+(7, 'Heidermar', 2),
+(8, 'Victoria', 2),
+(9, 'Simone', 2),
+(10, 'Ilenir', 2),
+(32, 'Salete', 2),
+(37, 'Larissa', 2),
+(38, 'Danyelis', 2),
+(39, 'Marcia B', 2),
+(40, 'Gabriel', 2),
+
+-- Grupo 10:40 (ID 3)
+(11, 'Ana Garcia', 3),
+(12, 'Jenifer', 3),
+(13, 'Mariangel', 3),
+(14, 'Jean C', 3),
+(15, 'Emelis', 3),
+(41, 'Kidia', 3),
+(42, 'Marcia T', 3),
+(43, 'Jean Pierre', 3),
+
+-- Grupo 11:50 (ID 4)
+(16, 'Freddy', 4),
+(17, 'Sandra', 4),
+(18, 'Diana', 4),
+(19, 'Gregorio', 4),
+(20, 'Augusto', 4),
+(36, 'Freidimar', 4);
+
+
+
+INSERT INTO sit_mips (codmip, situacao_mip)
+SELECT codmip, 1
+FROM mips
+ON CONFLICT (codmip) DO UPDATE SET situacao_mip = 1; 
+
+INSERT INTO sit_operadores (codop, situacao_op)
+SELECT codop, 1
+FROM operadores
+ON CONFLICT (codop) DO UPDATE SET situacao_op = 1; 
