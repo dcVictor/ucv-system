@@ -1,4 +1,19 @@
-UCV SYSTEM
+# UCV System
+
+> Projeto individual com intuito de treinar programação voltada a aplicações web.
+
+## 💻 Sobre o projeto
+
+Este projeto foi desenvolvido para consolidar conhecimentos em desenvolvimento web Full Stack, utilizando como base a arquitetura e aprendizados do projeto **Contec-system**.
+
+## 🛠 Tecnologias
+
+- **Front-end:** React
+- **Back-end:** Node.js
+- **Banco de Dados:** PostgreSQL 
+---
+
+Feito por [Victor de Conto](https://github.com/dcVictor)
 
 Sintáxe para inserções SQL no banco:
 
