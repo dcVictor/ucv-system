@@ -1,8 +1,8 @@
-INSERT INTO intervalos (horario) VALUES
-('08:20'),
-('09:30'),
-('10:40'),
-('11:50');
+INSERT INTO intervalos (horario, turno_intervalo) VALUES
+('08:20', 1),
+('09:30', 1),
+('10:40', 1),
+('11:50', 1);
 
 INSERT INTO mips (codmip, nome_mip, desc_mip, nivel_mip) VALUES 
 (1, 'MIP-01', 'Arburg', 2), 

@@ -2,6 +2,7 @@
 CREATE TABLE intervalos (
 	codintervalo SERIAL NOT NULL,
 	horario VARCHAR(100) NOT NULL,
+	turno_intervalo INTEGER NOT NULL,
 	CONSTRAINT pk_intervalos PRIMARY KEY (codintervalo)
 );
 
