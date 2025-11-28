@@ -74,7 +74,6 @@ INSERT INTO operadores (codop, nome_op, intervalo, turno, nivel_op) VALUES
 (36, 'Freidimar', 4, 1, 1);
 
 
-
 INSERT INTO sit_mips (codmip, situacao_mip)
 SELECT codmip, 1
 FROM mips
