@@ -15,7 +15,7 @@ Este projeto foi desenvolvido para consolidar conhecimentos em desenvolvimento w
 
 Feito por [Victor de Conto](https://github.com/dcVictor)
 
-Sintáxe para inserções SQL no banco:
+Sintaxe para inserções SQL no banco:
 
     Inserir novo operador:
         INSERT INTO operadores (codop, nome_op, intervalo, turno) VALUES 
@@ -31,7 +31,7 @@ Sintáxe para inserções SQL no banco:
 
 
 
-Sintáxe para atualizações SQL no banco:
+Sintaxe para atualizações SQL no banco:
 
     UPDATE /\ 
 
