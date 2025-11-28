@@ -10,7 +10,8 @@ CREATE TABLE operadores (
 	codop INTEGER NOT NULL,
 	nome_op VARCHAR(100) NOT NULL,
 	intervalo INTEGER NOT NULL,
-	turno_op integer NULL,
+	turno_op integer NOT NULL,
+	nivel_op INTEGER NOT NULL,
 	CONSTRAINT pk_operadores PRIMARY KEY (codop)
 	CONSTRAINT fk_opintervalos FOREIGN KEY (intervalo) REFERENCES intervalos(codintervalo)
 );
@@ -28,6 +29,7 @@ CREATE TABLE mips (
 	codmip INTEGER NOT NULL,
 	nome_mip VARCHAR(100) NOT NULL,
 	desc_mip VARCHAR(100) NULL,
+	nivel_mip INTEGER NOT NULL,
 	CONSTRAINT pk_mips PRIMARY KEY (codmip)
 );
 
